@@ -66,18 +66,17 @@ WITH RECURSIVE employee_hierarchy AS (
 )
 SELECT * FROM employee_hierarchy ORDER BY level, id;
 ```
-output : 
 
- id  |       name        | manager_id | level
------+------------------+------------+------
-  1  | CEO              | NULL       | 1
-  2  | CTO              | 1          | 2
-  3  | CFO              | 1          | 2
-  4  | CMO              | 1          | 2
-  5  | Engineer1        | 2          | 3
-  6  | Engineer2        | 2          | 3
-  7  | Accountant       | 3          | 3
-  8  | Marketing Lead   | 4          | 3
+ id  |       name        | manager_id  | level
+-----|-------------------|-------------|-----
+  1  | CEO               | NULL        | 1
+  2  | CTO               | 1           | 2
+  3  | CFO               | 1           | 2
+  4  | CMO               | 1           | 2
+  5  | Engineer1         | 2           | 3
+  6  | Engineer2         | 2           | 3
+  7  | Accountant        | 3           | 3
+  8  | Marketing Lead    | 4           | 3
 
 ✅ Hierarchy levels are properly displayed.
 
