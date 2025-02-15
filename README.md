@@ -68,7 +68,7 @@ SELECT * FROM employee_hierarchy ORDER BY level, id;
 ```
 output : 
 
- id  |       name        | manager_id | level
+id  |       name        | manager_id | level
 -----+------------------+------------+------
   1  | CEO              | NULL       | 1
   2  | CTO              | 1          | 2
